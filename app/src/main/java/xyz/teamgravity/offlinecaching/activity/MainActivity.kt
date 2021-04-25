@@ -29,5 +29,6 @@ class MainActivity : AppCompatActivity() {
         viewmodel.restaurants.observe(this) {
             adapter.submitList(it)
         }
+
     }
 }
