@@ -2,6 +2,7 @@ package xyz.teamgravity.offlinecaching.arch.api
 
 import retrofit2.http.GET
 import retrofit2.http.Header
+import retrofit2.http.Query
 import xyz.teamgravity.offlinecaching.model.RestaurantModel
 
 interface RandomDataApi {
@@ -11,6 +12,6 @@ interface RandomDataApi {
     }
 
     @GET("restaurant/random_restaurant")
-    suspend fun retrieveRestaurants(@Header("size") size: Int = DEFAULT_SIZE): List<RestaurantModel>
+    suspend fun retrieveRestaurants(@Query("size") size: Int = DEFAULT_SIZE): List<RestaurantModel>
 
 }
