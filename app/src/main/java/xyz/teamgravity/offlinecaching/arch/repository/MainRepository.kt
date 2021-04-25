@@ -1,8 +1,10 @@
 package xyz.teamgravity.offlinecaching.arch.repository
 
+import kotlinx.coroutines.flow.Flow
+import xyz.teamgravity.offlinecaching.helper.util.Resource
 import xyz.teamgravity.offlinecaching.model.RestaurantModel
 
 interface MainRepository {
 
-    suspend fun getRestaurants(): List<RestaurantModel>
+    fun getRestaurants(): Flow<Resource<List<RestaurantModel>>>
 }

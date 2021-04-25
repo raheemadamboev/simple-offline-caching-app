@@ -10,6 +10,7 @@ import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import xyz.teamgravity.offlinecaching.arch.api.RandomDataApi
+import xyz.teamgravity.offlinecaching.arch.database.RestaurantDao
 import xyz.teamgravity.offlinecaching.arch.database.RestaurantDatabase
 import xyz.teamgravity.offlinecaching.arch.repository.MainRepository
 import xyz.teamgravity.offlinecaching.arch.repository.MainRepositoryImpl
@@ -29,9 +30,8 @@ object ApplicationModule {
             .build()
             .create(RandomDataApi::class.java)
 
-    @Singleton
     @Provides
-    fun provideMainRepository(api: RandomDataApi): MainRepository = MainRepositoryImpl(api)
+    fun provideMainRepository(api: RandomDataApi, db: RestaurantDatabase): MainRepository = MainRepositoryImpl(api, db)
 
     @Singleton
     @Provides
@@ -39,8 +39,4 @@ object ApplicationModule {
         Room.databaseBuilder(app, RestaurantDatabase::class.java, DatabaseConst.DATABASE_NAME)
             .addMigrations()
             .build()
-
-    @Singleton
-    @Provides
-    fun provideRestaurantDao(db: RestaurantDatabase) = db.restaurantDao()
 }
