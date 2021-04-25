@@ -2,6 +2,8 @@
   <dictionary name="User">
     <words>
       <w>livedata</w>
+      <w>offlinecaching</w>
+      <w>teamgravity</w>
     </words>
   </dictionary>
 </component>
