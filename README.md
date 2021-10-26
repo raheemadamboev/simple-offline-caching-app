@@ -5,9 +5,9 @@ This app is built by MVVM architecture. This app gets its data from REST API wit
 
 <a href="https://random-data-api.com/">Random Data API</a>
 
-<a href="https://github.com/raheemadamboev/simple-offline-caching-app/blob/master/app-debug.apk">Demo application</a>
+<a href="https://github.com/raheemadamboev/simple-offline-caching-app/blob/master/app-debug.apk">Demo app</a>
 
-**Key points:**
+**Tech stack:**
 
 - MVVM
 - Dependency Injection (Hilt)
