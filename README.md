@@ -7,6 +7,10 @@ This app is built by MVVM architecture. This app gets its data from REST API wit
 
 <a href="https://github.com/raheemadamboev/simple-offline-caching-app/blob/master/app-debug.apk">Demo app</a>
 
+**Screenshots:**
+
+<img src="https://github.com/raheemadamboev/simple-offline-caching-app/blob/master/video_2021-10-27_01-02-49.gif" alt="Italian Trulli" width="200" height="434">
+
 **Tech stack:**
 
 - MVVM
