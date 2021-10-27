@@ -1,7 +1,7 @@
 # simple-offline-caching-app
 Simple MVVM app gets its data from REST API and caches them phone storage locally. 
 
-This app is built by MVVM architecture. This app gets its data from REST API with the help of Retrofit2 and Kotlin Coroutines and caches them to Room database. NetworkBoundResource helper method is implemented with the help of Kotlin Flow. Dependencies are injected by Hilt.
+This app is built by MVVM architecture. This app gets its data from REST API with the help of Retrofit2 and Kotlin Coroutines and caches them to Room database. NetworkBoundResource helper method is implemented with the help of Kotlin Flow. Dependencies are injected by Hilt. 
 
 <a href="https://random-data-api.com/">Random Data API</a>
 
